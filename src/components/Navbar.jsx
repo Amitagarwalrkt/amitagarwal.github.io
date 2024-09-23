@@ -26,7 +26,9 @@ function Navbar() {
       id: 5,
       text: "Contact",
     },
-  ];
+    
+  ]; 
+  
   return (
     <>
       <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 h-16 shadow-md fixed top-0 left-0 right-0 z-50 bg-white">
@@ -55,9 +57,19 @@ function Navbar() {
                   >
                     {text}
                   </Link>
+                  
                 </li>
+                
               ))}
+              
+              <button>
+                <a href="https://amitagarwalportfolio.netlify.app/">
+                  Website
+                  </a>
+                </button>
             </ul>
+              
+              
             <div onClick={() => setMenu(!menu)} className="md:hidden">
               {menu ? <IoCloseSharp size={24} /> : <AiOutlineMenu size={24} />}
             </div>
@@ -82,8 +94,14 @@ function Navbar() {
                   >
                     {text}
                   </Link>
+                  
                 </li>
               ))}
+              <button>
+                <a href="https://amitagarwalportfolio.netlify.app/">
+                  Website
+                  </a>
+                </button>
             </ul>
           </div>
         )}
